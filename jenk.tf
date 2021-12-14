@@ -1,7 +1,7 @@
 #aws provider
 provider "aws" {
   region     = "ap-south-1"
-  profile    = "Awsadmin"
+  profile    = "terraformuser"
 }
 
 #security group
