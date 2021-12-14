@@ -1,7 +1,7 @@
 #aws provider
 provider "aws" {
   region     = "ap-south-1"
-  profile    = "terraformuser"
+  profile    = "Awsadmin"
 }
 
 #security group
@@ -77,7 +77,7 @@ resource "null_resource" "nullremote" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = file("/root/test/test-os-key.pem")
+    private_key = file("D:\Terraformcode\terraform with jenkins\test\test-os-key.pem")
     host        = aws_instance.aws-os-1.public_ip
   }
 
