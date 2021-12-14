@@ -77,7 +77,7 @@ resource "null_resource" "nullremote" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = file("D:/Terraformcode/terraform with jenkinstest/test-os-key.pem")
+    private_key = file("D:/Terraformcode/terraform with jenkins/test/test-os-key.pem")
     host        = aws_instance.aws-os-1.public_ip
   }
 
